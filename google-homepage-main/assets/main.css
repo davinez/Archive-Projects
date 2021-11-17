@@ -1,0 +1,106 @@
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+.header-navbar {
+  list-style-type: none;
+  overflow: hidden;
+  font-size: 14px; 
+  padding-right: 2%; 
+}
+
+.header-navbar a {
+    text-decoration: none;
+}
+
+.header-navbar-left {
+    float: left;
+    padding-left: 15px;
+    color: #000;
+}
+
+.header-navbar-right {
+    float:right;
+    padding-right: 1%;
+    color: #000;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    line-height: 0%;
+}
+
+#sign-in {
+    color: white;
+    font-weight: bold;
+    font-family: arial;
+    background-color: #4583ed;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+    line-height: 0%;
+
+}
+
+.central { 
+    font-size: 14px;
+    height: 60%;
+    position: absolute;
+    top: 25%;
+    left: 28%;
+    overflow: hidden;
+}
+
+#logo {
+    position: absolute;
+    left: 22%; 
+}
+
+#search {
+    position: relative;
+    top: 32%;
+    left: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 40%;
+    padding-left: 0%;
+
+}
+
+.central-buttons{
+    position: relative;
+    top: 40%;
+    left: 27%;
+    border: solid #f2f2f2;
+    border-radius: 8%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+.footer-navbar {
+    list-style-type: none;
+    overflow: hidden;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    margin-top: 40%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 2%;
+    padding-left: 0%;
+    
+}
+
+.footer-navbar a {
+    text-decoration: none;
+}
+
+.footer-navbar-left {
+    float:left;
+    padding-left: 15px;
+    color: #70757a;
+}
+
+.footer-navbar-right {
+    float:right;
+    padding-left: 15px;
+    color: #70757a;
+}

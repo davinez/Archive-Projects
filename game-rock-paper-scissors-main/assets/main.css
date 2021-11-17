@@ -1,0 +1,84 @@
+body { 
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden;
+    background-color: rgb(218, 186, 149);
+}
+
+h1{
+    text-align:center;
+}
+
+span {
+    padding: 4%;
+}
+
+#container-general {
+    display: block; 
+    font-size: 150%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 25%;
+    left: 0;
+    width: 400px;
+    height: 200px;
+    text-align:center;
+}
+
+#container {
+    display: block; 
+    font-size: 100%;
+    position: absolute;
+    margin: auto;
+    top: 35%;
+    right: 20%;
+    bottom: 0;
+    left: 20%;
+    width: 400px;
+    height: 100px;
+    text-align:center;
+}
+
+.playButtons {
+    font-size: 150%;
+    padding: 2% 4%;
+    background-color: #b66161;
+    border: solid #6d662a; 
+
+}
+
+#playAgain {
+    font-size: 150%;
+    padding: 2% 4%;
+    background-color: #b66161;
+    border: solid #6d662a;  
+    position: absolute;
+    margin: auto;
+    top: 25%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    line-height: 0;
+    
+}
+
+#winnerDiv {
+    font-size: 200%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 10%;
+    left: 0;
+    width: 400px;
+    height: 50px;
+    text-align:center;
+    
+}
+
+
+
+

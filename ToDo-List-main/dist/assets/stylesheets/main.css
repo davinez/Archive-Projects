@@ -1,0 +1,343 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+html {
+  height: 100%;
+  box-sizing: border-box;    
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit; /* Universal Box Sizing with Inheritance */
+  }
+  
+  body { 
+    min-height: 100%;
+   }
+
+  .body-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+.header {
+background-color: rgb(32, 32, 32);
+color: white;
+font-size: 3rem;
+font-weight: 900;
+text-align: center;
+padding-bottom: 1.5rem;
+padding-top: 1.5rem;
+
+}
+
+
+/*
+  ========================================
+  Main Container
+  ========================================
+*/
+
+#content {
+  display: grid;
+  grid-template-columns: 1fr 2rem 70% 2rem;
+  grid-template-rows: auto;
+  width: 100%;
+
+}
+
+/*
+  ========================================
+  Sidebar Container
+  ========================================
+*/
+
+.todo-settings {
+  padding-top: 2rem;
+  background-color: wheat;
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center; 
+
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.projects-list > li {
+  display: flex;
+  gap: 1rem;
+}
+
+.projects-list > li > p {
+  font-size: 1.2rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.confirm-cancel-btns-container {
+  display: flex;
+  gap: 1rem;
+}
+
+#confirm-project-btn {
+  background-color: #5ec038; 
+  display: none;
+}
+
+#cancel-project-btn {
+  background-color: #e67552; 
+  display: none;
+}
+
+/*
+  ========================================
+  Tasks Container
+  ========================================
+*/
+
+.todo-content {
+  grid-column: 3 / 4;
+
+}
+
+.cards-container{
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.task-description{
+  grid-area: description;
+  word-breaK: break-all;
+}
+.task-priority {
+  grid-area: priority;
+}
+.task-date {
+  grid-area: date;
+}
+.task-status {
+  grid-area: status;
+}
+
+.task-remove {
+  grid-area: removeCard;
+  padding-top: .6rem;
+}
+
+.task-card {
+  width: 38%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "description description"
+    "date priority"
+    "status status"
+    "removeCard removeCard";
+  row-gap: .8rem;
+  text-align: center;
+  border: 2px solid #8d5618;
+  border-radius: 5%;
+  font-size: 1.1rem;
+}
+
+.status {
+  background-color: white;
+  border: 2px solid #f3b275;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+[data-status-color="0"] {
+  background-color: #ff471a;
+}
+
+[data-status-color="1"] {
+  background-color: #ffe066;
+}
+
+[data-status-color="2"] {
+ background-color: #00b33c;
+}
+
+.todo-content-form {
+ display: flex;
+ margin-top: 2rem;
+ margin-bottom: 2rem;
+ justify-content: space-around;
+}
+
+#confirm-task-btn {
+  background-color: #5ec038; 
+  display: none;
+}
+
+#cancel-task-btn {
+  background-color: #e67552; 
+  display: none;
+}
+
+
+/*
+  ========================================
+ Buttons
+  ========================================
+*/
+
+.btns {
+  padding: .5rem;
+  border: none;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.add-btns {
+  background-color: #ccc691; 
+  }
+
+.add-btns:hover {
+  background-color: rgb(58, 117, 117);
+}
+
+/*
+  ========================================
+ Inputs
+  ========================================
+*/
+
+#project-input {
+  display: none;
+}
+
+.content-form {
+  display: none;
+}
+
+/*
+  ========================================
+ Footer
+  ========================================
+*/
+
+.footer-last {
+  background-color: rgb(32, 32, 32);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-align: center;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin-top:auto;
+}
+
+.footer-last > p > a {
+  color: aquamarine;
+}
+
+
+/*
+  ========================================
+ Media Query
+  ========================================
+*/
+
+@media only screen and (max-width: 768px) {
+
+  #content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .todo-content-form {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  
+
+
+
+
+
+
+
+
+
+}

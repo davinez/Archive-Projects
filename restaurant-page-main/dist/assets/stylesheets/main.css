@@ -1,0 +1,175 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+html {
+  height: 100%;
+  box-sizing: border-box;    
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit; /* Universal Box Sizing with Inheritance */
+  }
+  
+  body { 
+    min-height: 100%;
+    background-color: bisque;
+   }
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+.top-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.top-header > h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.top-header-image {
+  width: 12%;
+  height: 12%;
+}
+
+.header-navbar {
+  display: flex;
+  gap: 2rem;
+  background-color: coral;
+}
+
+.navbar-item {
+  background-color: coral;
+  border: none;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/*
+  ========================================
+  Main Content
+  ========================================
+*/
+
+.main-header {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 2.6rem;
+  margin-bottom: 1.5rem;
+}
+
+#content {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+section {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 1.2rem;
+  width: 50%;
+  line-height: 1.5rem;
+}
+
+section > h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+section > p {
+  text-align: center; 
+  letter-spacing: .6px;
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+.footer-last {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 2.5rem;
+font-weight: 900;
+gap: 1.2rem;
+}
+
+.footer-last > img {
+  width: 7%;
+  height: 7%;
+}
+
+
+
+
+
+
+

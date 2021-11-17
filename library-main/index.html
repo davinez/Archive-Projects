@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Template</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="assets/stylesheets/main.css" />
+</head>
+
+<body class="d-flex flex-column align-items-center">
+  <!-- Header -->
+  <header>
+    <h3 class="display-4">Library</h3>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <div class="container mb-3">
+      <!-- Library Form -->
+      <form id="form-one" class="row row-cols-1 row-cols-lg-5  g-2 mx-auto mb-4">
+        <div class="col form-group">
+          <label for="title">Book Title</label>
+          <input type="text" class="form-control" id="title" name="title" placeholder="A Dream of Spring" />
+        </div>
+        <div class="col form-group">
+          <label for="author">Book Author</label>
+          <input type="text" class="form-control" id="author" name="author" placeholder="George RR Martin" />
+        </div>
+        <div class="col form-group">
+          <label for="pages">Number of pages</label>
+          <input type="number" class="form-control" id="pages" name="pages" placeholder="694" />
+        </div>
+        <div class="col align-self-center d-flex justify-content-center form-switch form-group">
+          <input class="form-check-input form-control" type="checkbox" id="read" name="read">
+          <label class="form-check-label" for="read" name="read">Read?</label>
+        </div>
+        <div class="col align-self-end form-group">
+          <button id="btn-one" type="button" class="btn btn-success">
+            Add Book
+          </button>
+        </div>
+      </form>
+      <!-- Books Cards -->
+      <div class="row row-cols-1 row-cols-md-5 g-4 cards">
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-auto bg-dark">
+    <p>2021</p>
+    <p>Coded by <a href="https://github.com/davinez">Davinez</a></p>
+  </footer>
+
+
+  <!-- Own scripts -->
+  <script src="scripts.js"></script>
+</body>
+
+</html>

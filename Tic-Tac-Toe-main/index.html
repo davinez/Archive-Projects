@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tic Tac Toe Davinez</title>
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="assets/stylesheets/main.css" />
+</head>
+
+<body>
+  <header class="title">
+    <p>Tic Tac Toe Game</p>
+  </header>
+
+  <main>
+    <div class="game-options">
+      <button id="btn-modal" class="btns">Set player name</button>
+      <button id="btn-reset" class="btns">Reset game</button>
+    </div>
+
+    <div class="currentPlayer">
+      <p class="player">-</p>
+    </div>
+
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <label for="playerName">Enter Player 1 name</label>
+        <input type="text" id="playerName" value="">
+        <label for="playerName2">Enter Player 2 name</label>
+        <input type="text" id="playerName2" value="">
+        <div class="modal-btn">
+          <input type="button" class="btn-submit btns" value="Enter">
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="game-container">
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+
+  </main>
+
+
+  <footer class="footer-last">
+    <p>2021</p>
+    <p>Coded by <a href="https://github.com/davinez">Davinez</a></p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

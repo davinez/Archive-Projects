@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ToDo-List-Davinez</title>
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="assets/stylesheets/main.css" />
+</head>
+
+<body class="body-container">
+
+  <!-- Header -->
+  <header class="header">
+    <h1>TODO List</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main id="content">
+    <section class="todo-settings">
+      <ul class="projects-list">
+
+      </ul>
+      <input id="project-input" type="text" placeholder="Project" value="">
+      <div class="confirm-cancel-btns-container">
+        <button id="confirm-project-btn" class="confirm-cancel-btns btns">Confirm</button>
+        <button id="cancel-project-btn" class="confirm-cancel-btns btns">Cancel</button>
+      </div>
+      <button id="add-project" class="add-btns btns">Add Project</button>
+
+
+
+    </section>
+    <section class="todo-content">
+      <div class="cards-container">
+
+      </div>
+
+      <div class="todo-content-form">
+        <input id="priority-input" class="content-form" type="text" placeholder="Priority" value="">
+        <input id="description-input" class="content-form" type="text" placeholder="Description" value="">
+        <input type="date" id="date-input" class="content-form" name="todo-date">
+        <button id="confirm-task-btn" class="confirm-cancel-btns btns">Confirm</button>
+        <button id="cancel-task-btn" class="confirm-cancel-btns btns">Cancel</button>
+        <button id="add-task" class="add-btns btns">Add Task</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-last">
+    <p>2021</p>
+    <p>Coded by <a href="https://github.com/davinez">Davinez</a></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

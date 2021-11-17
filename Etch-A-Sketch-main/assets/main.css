@@ -1,0 +1,49 @@
+body { 
+    margin: 0; 
+    height: 100vh; 
+    overflow: hidden;
+    background-color: rgb(218, 186, 149);
+}
+
+h1{
+    text-align:center;
+    background-color: rgb(202, 106, 51);
+}
+
+#container {
+    display: grid;
+    height: 70vh;
+    width: 70vh;    
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+
+}
+
+.squaresOff {
+    background-color: white;
+       
+}
+
+.squaresOn {
+    background-color: black;
+      
+}
+
+#options {
+    display: flex;
+    justify-content: space-between;
+    max-width: 50vh;
+    margin: 0 auto;
+    align-items: center;  
+}
+
+#reset {
+    padding: 2% 4%;
+    background-color: #b66161;
+    border: solid #6d662a; 
+}
+
+
