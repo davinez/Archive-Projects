@@ -1,0 +1,66 @@
+/*
+  ========================================
+  Main/Top Navbar
+  ========================================
+*/
+
+.navbar {
+  width: 100%;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  height: 3.5rem;
+  min-height: 3.5rem;
+  padding-left: 2rem;
+  background: rgb(0, 0, 0);
+  color: white;
+}
+
+.navlinks {
+  flex-basis: 65%;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.navlinks > li > a:hover {
+  text-decoration: underline;
+}
+
+.hamburger {
+  display: none;
+}
+
+/*
+  ========================================
+  Media Query
+  ========================================
+*/
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .navbar {
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    height: auto;
+    gap: 1rem;
+    padding-top: 0.2rem;
+    padding-left: 2rem;
+  }
+
+  .navlinks-abiertos {
+    flex-flow: column nowrap;
+    padding-bottom: 1.5rem;
+  }
+
+  .navlinks-cerrados {
+    display: none;
+  }
+}

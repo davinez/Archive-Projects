@@ -1,0 +1,51 @@
+.boton-flotante {
+  background-color: rgb(202, 236, 247);
+  border: 2px solid #131313;
+  cursor: pointer;
+  width: 3rem;
+  margin-left: auto;
+  position: relative;
+  right: 1.2rem;
+  bottom: 0;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.boton-flotante:hover {
+  background-color: rgb(85, 102, 107);
+}
+
+.boton-flotante > img {
+  height: 2rem;
+  object-fit: contain;
+}
+
+.boton-cerrado {
+  display: none;
+}
+
+.boton-abierto {
+  width: 7rem;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  right: 1.2rem;
+  bottom: 3rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+}
+
+/*
+  ========================================
+  Media Query
+  ========================================
+*/
+
+@media (max-width: 768px) {
+  .boton-flotante {
+    bottom: 4rem;
+  }
+}
