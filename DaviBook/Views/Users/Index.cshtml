@@ -1,0 +1,49 @@
+﻿@model DaviBook.Models.AppUser
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>           
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.UserName)
+            </td>          
+            <td>
+                @Html.DisplayFor(model => model.Email)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="model.UserId">Edit</a> |
+                <a asp-action="Details" asp-route-id="model.UserId">Details</a> |
+                <a asp-action="Delete" asp-route-id="model.UserId">Delete</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+@foreach (var item in Model.Posts)
+{
+    <p>@item.Title</p>
+    <p>@item.Content</p>
+    <p>@item.CreatedDate.ToString("dd-MM-yyyy")</p>
+    <p>@(item.LastUpdate.HasValue ? item.LastUpdate.Value.ToString("dd-MM-yyyy") : "")</p>
+}
+
+ 
+
