@@ -1,0 +1,164 @@
+@import './variables.scss';
+
+/*
+  ========================================
+  Pagina 'Salon de la fama'
+  ========================================
+*/
+
+.container {
+  height: 100%;
+}
+
+.background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  background: linear-gradient(to top right, transparent 50%, #4810ca 0) top
+      right/65% 100% no-repeat,
+    #ece7e7;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.centerElements {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  margin-top: 2.5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.searchbarContainer {
+  flex-basis: 35%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  line-height: 2rem;
+
+  input {
+    margin-top: 2rem;
+    padding: 0.6rem;
+    border-radius: 2rem;
+    border: none;
+    width: 100%;
+    font-size: 0.8rem;
+    background-image: url(../assets/search.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-origin: content-box;
+    background-size: 1.5rem;
+  }
+
+  img {
+    position: absolute;
+  }
+}
+
+.searchbarHeader {
+  font-size: 0.7rem;
+  color: gray;
+}
+
+.searchbarTitle {
+  font-size: 1.5rem;
+}
+
+.imageContainer {
+  flex-basis: 45%;
+}
+
+.imageContainer > img {
+  width: 18rem;
+}
+
+.cardsHeader {
+  font-size: 0.7rem;
+  color: gray;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 2rem;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  margin-left: 5rem;
+  margin-right: 1rem;
+}
+
+.card {
+  background: white;
+  display: flex;
+  flex-flow: column nowrap;
+  flex-basis: 20%;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  margin-bottom: 2rem;
+  box-shadow: 2px 2px 5px 0px black;
+}
+
+.card > img {
+  width: 80%;
+  align-self: center;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.empresa {
+  color: rgb(95, 91, 91);
+}
+
+.ubicacion {
+  color: gray;
+}
+
+.cardBody {
+  line-height: 1.4rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.cardFooter {
+  width: 100%;
+  line-height: 1.4rem;
+  background: #ece7e7;
+  padding: 1rem;
+}
+
+.salario {
+  font-size: 0.9rem;
+  color: #4810ca;
+}
+
+.footer {
+  color: gray;
+}
+
+/*
+  ========================================
+  Media Query
+  ========================================
+*/
+
+@media (max-width: 768px) {
+  .cardsContainer {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .form-container > form > input {
+    font-size: 0.9rem;
+  }
+
+  .form-container > form > button {
+    font-size: 0.9rem;
+  }
+}

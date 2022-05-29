@@ -1,0 +1,78 @@
+/*
+  ========================================
+  Main/Top Navbar
+  ========================================
+*/
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4rem;
+}
+
+.navlinks {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: 0.8rem;
+  margin-right: 4rem;
+  align-items: center;
+  color: white;
+}
+
+.hamburger-icon {
+  display: none;
+}
+
+.brand-icon {
+  margin-left: 2.5rem;
+}
+
+.brand-icon > .burger {
+  width: 100%;
+  height: 1.5rem;
+}
+
+.log-in {
+  margin-left: 4rem;
+}
+
+.sign-up {
+  background-color: #571ce0;
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
+
+/*
+  ========================================
+  Media Query
+  ========================================
+*/
+
+@media (max-width: 768px) {
+  .hamburger-icon {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .navbar {
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    height: auto;
+    gap: 1rem;
+    padding-top: 0.2rem;
+    padding-left: 2rem;
+  }
+
+  .navlinks-abiertos {
+    flex-flow: column nowrap;
+    padding-bottom: 1.5rem;
+  }
+
+  .navlinks-cerrados {
+    display: none;
+  }
+}
